@@ -1,0 +1,38 @@
+.aside{
+    width:4rem;
+    border-right: 1px solid #ddd;
+    font-size: .85rem;
+    position: absolute;
+    left: 0;
+}
+
+.type-nav{
+    position: relative;
+    padding:.7rem .3rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.type-nav.selected{
+    margin-right: -1px; 
+    padding-left:-1px; 
+    color: #333;
+    background-color: #fff; 
+}
+.dish{
+    margin-left: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;  
+}
+.content{
+  position: absolute;
+  left: 3rem;
+  width: 80%;
+}
+.btn{
+  float: right;
+}
+.cart{
+  position: absolute;
+  bottom: 0;
+}

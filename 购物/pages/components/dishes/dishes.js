@@ -122,23 +122,23 @@ Page({
   },
   selectNav(event) {
     let id = event.target.dataset.id,
-      index = parseInt(event.target.dataset.index);
+        index = parseInt(event.target.dataset.index);
     self = this;
     this.setData({
       curNav: id,
       curIndex: index
     })
   },
-  //菜品
-  dishSubtract(event){
+  subtract(event){
+    console.log(event);
+  },
+  plus(event){
 
   },
-  dishPlus(event){
-
-  },
-
   // 选择菜品
-  selectDish(event) {
+  /*selectDish(event) {
+    var dishNum = event.currentTarget.dataset.dish;
+    console.log(event);
     let dish = event.currentTarget.dataset.dish; //选择的菜品的id
     let flag = true; //true表示可以被添加到购物车中
     let cart = this.data.cart; //购物车数组
@@ -156,8 +156,8 @@ Page({
       cartTotal: cart.length //购物车商品数量
     })
     this.setStatus(dish) //修改状态
-  },
-  //修改菜品选中状态
+  },*/
+  /*//修改菜品选中状态
   setStatus(dishId) {
     let dishes = this.data.dishesList;//菜品的二维数组
     for (let dish of dishes) {
@@ -171,7 +171,7 @@ Page({
     this.setData({
       dishesList: this.data.dishesList
     })
-  },
+  },*/
 
     onLoad() {
     this.loadingChange()

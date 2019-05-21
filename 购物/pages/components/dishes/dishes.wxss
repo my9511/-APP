@@ -29,9 +29,14 @@
   left: 3rem;
   width: 80%;
 }
-.btn{
+.dishesNum{
   float: right;
 }
+.circle{
+  width:32px;
+  height:32px;
+}
+
 .cart{
   position: absolute;
   bottom: 0;

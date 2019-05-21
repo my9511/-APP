@@ -11,12 +11,14 @@
     <view class="dish flex-wrap flex-direction-row" catchtap="selectDish" data-dish="{{item.id}}">
       <view class="flex-item">
         <text class="title">{{item.name}}</text>
-        <p>￥{{item.price}}</p>
-          <view class="btn">
-            <button class="subtract" size="mini" bindtap="dishSubtract">-</button>
-            <p>{{item.num}}</p>
-            <button class="plus" size="mini" bindtap="dishPlus">+</button>
+        <view style='margin-top:20rpx;color:#F05A86'>
+          ￥{{item.price}}
+          <view class="dishesNum">
+            <image class="minus circle" src="../../../images/minus-circle.png" bindtap="subtract"></image>
+            {{item.num}}
+            <image class="plus circle" src="../../../images/plus-circle.png" bindtap="plus"></image>
           </view>
+        </view>
       </view>
     </view>
   </block>
